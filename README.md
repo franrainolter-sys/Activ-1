@@ -1,71 +1,71 @@
- 
- {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header, nav, main, aside, footer {
-    padding: 20px;
-    margin: 10px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-main, aside{
-    float: left;
-}
-
-main {
-    width: calc(80% - 20px); /* Resto 20px para que no colapse por el margin-left y margin-rigth */
-}
-
-aside {
-    width: calc(20% - 20px); /* Resto 20px para que no colapse por el margin-left y margin-rigth */
-    background: #ddd;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-}
-
-article {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-article img {
-    width: 300px;
-    height: 300px;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #555;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog - Aplicando HTML Semántico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Blog - Aplicando HTML Semántico</h1>
+    </header>    
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Título de Sección 1</h2>
+            <article>
+                <h3>Título del Artículo 1</h3>
+                <img src="https://media.istockphoto.com/id/1222357475/vector/image-preview-icon-picture-placeholder-for-website-or-ui-ux-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KuCo-dRBYV7nz2gbk4J9w1WtTAgpTdznHu55W9FjimE=" alt="Imagen"/>
+                <p>Este es el contenido del primer artículo. Aquí se desarrolla el tema principal.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae gravida ipsum, quis blandit odio. Sed tristique neque nec neque bibendum, eu lacinia diam efficitur. Vivamus leo elit, finibus nec commodo vitae, eleifend eu enim. Nulla facilisi. Donec a ex ac tortor placerat egestas. Donec commodo quis leo ut cursus. Mauris molestie aliquet nunc non lobortis. Quisque rutrum libero ac lacus convallis porttitor. Fusce aliquet, odio non varius porta, ex magna euismod urna, id vestibulum sapien lorem sit amet elit. Fusce at ultrices lorem. Fusce a nisi vitae leo iaculis rhoncus nec non sem. Sed odio purus, feugiat blandit volutpat ut, placerat eu ante. Nullam eget eros sapien.</p>
+                <p><em>Publicado el 17 de marzo de 2025</em></p>
+            </article>
+            <article>
+                <h3>Título del Artículo 2</h3>
+                <img src="https://media.istockphoto.com/id/1222357475/vector/image-preview-icon-picture-placeholder-for-website-or-ui-ux-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KuCo-dRBYV7nz2gbk4J9w1WtTAgpTdznHu55W9FjimE=" alt="Imagen"/>
+                <p>Este es el contenido del segundo artículo. Se pueden incluir más detalles aquí.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae gravida ipsum, quis blandit odio. Sed tristique neque nec neque bibendum, eu lacinia diam efficitur. Vivamus leo elit, finibus nec commodo vitae, eleifend eu enim. Nulla facilisi. Donec a ex ac tortor placerat egestas. Donec commodo quis leo ut cursus. Mauris molestie aliquet nunc non lobortis. Quisque rutrum libero ac lacus convallis porttitor. Fusce aliquet, odio non varius porta, ex magna euismod urna, id vestibulum sapien lorem sit amet elit. Fusce at ultrices lorem. Fusce a nisi vitae leo iaculis rhoncus nec non sem. Sed odio purus, feugiat blandit volutpat ut, placerat eu ante. Nullam eget eros sapien.</p>
+                <p><em>Publicado el 16 de marzo de 2025</em></p>
+            </article>
+        </section>
+        <section>
+            <h2>Título de Sección 2</h2>
+            <article>
+                <h3>Título del Artículo 1</h3>
+                <img src="https://media.istockphoto.com/id/1222357475/vector/image-preview-icon-picture-placeholder-for-website-or-ui-ux-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KuCo-dRBYV7nz2gbk4J9w1WtTAgpTdznHu55W9FjimE=" alt="Imagen"/>
+                <p>Este es el contenido del primer artículo. Aquí se desarrolla el tema principal.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae gravida ipsum, quis blandit odio. Sed tristique neque nec neque bibendum, eu lacinia diam efficitur. Vivamus leo elit, finibus nec commodo vitae, eleifend eu enim. Nulla facilisi. Donec a ex ac tortor placerat egestas. Donec commodo quis leo ut cursus. Mauris molestie aliquet nunc non lobortis. Quisque rutrum libero ac lacus convallis porttitor. Fusce aliquet, odio non varius porta, ex magna euismod urna, id vestibulum sapien lorem sit amet elit. Fusce at ultrices lorem. Fusce a nisi vitae leo iaculis rhoncus nec non sem. Sed odio purus, feugiat blandit volutpat ut, placerat eu ante. Nullam eget eros sapien.</p>
+                <p><em>Publicado el 17 de marzo de 2025</em></p>
+            </article>
+            <article>
+                <h3>Título del Artículo 2</h3>
+                <img src="https://media.istockphoto.com/id/1222357475/vector/image-preview-icon-picture-placeholder-for-website-or-ui-ux-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KuCo-dRBYV7nz2gbk4J9w1WtTAgpTdznHu55W9FjimE=" alt="Imagen"/>
+                <p>Este es el contenido del segundo artículo. Se pueden incluir más detalles aquí.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae gravida ipsum, quis blandit odio. Sed tristique neque nec neque bibendum, eu lacinia diam efficitur. Vivamus leo elit, finibus nec commodo vitae, eleifend eu enim. Nulla facilisi. Donec a ex ac tortor placerat egestas. Donec commodo quis leo ut cursus. Mauris molestie aliquet nunc non lobortis. Quisque rutrum libero ac lacus convallis porttitor. Fusce aliquet, odio non varius porta, ex magna euismod urna, id vestibulum sapien lorem sit amet elit. Fusce at ultrices lorem. Fusce a nisi vitae leo iaculis rhoncus nec non sem. Sed odio purus, feugiat blandit volutpat ut, placerat eu ante. Nullam eget eros sapien.</p>
+                <p><em>Publicado el 16 de marzo de 2025</em></p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h3>Otras publicaciones</h3>
+        <ul>
+            <li><a href="#">Artículo relacionado 1</a></li>
+            <li><a href="#">Artículo relacionado 2</a></li>
+            <li><a href="#">Artículo relacionado 3</a></li>
+        </ul>
+    </aside>
+    <div style="clear: both;"></div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
+</body>
+</html>
